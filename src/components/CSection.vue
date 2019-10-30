@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      {{ingredient}}
+      <h1>calorias {{this.nutrition.calories}}</h1>
     </div>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
         console.log(response);
         this.nutrition = response.data;
         console.log("nutrition");
-        console.log(this.nutrition);
+        console.log(this.nutrition.calories);
       }).catch(e => {
         console.log(e)
       })
