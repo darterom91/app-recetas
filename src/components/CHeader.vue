@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="headers">
-      <h1 class="title">App-recetas</h1>
+      <h1 class="title pt-2 pl-2">App-recetas</h1>
+      <img class="imgHeader float-right my-1 mr-4" src="@/assets/img/cesta.png" alt="">
     </div>
   </div>
 </template>
@@ -25,5 +26,37 @@ export default {
 .title {
   font-size: 40px;
   background-color: white;
+}
+.imgHeader {
+  width: 100px;
+}
+@media (max-width: 750px) {
+  .title {
+    font-size: 2.5em;
+  }
+  .imgHeader {
+    width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.25em;
+  }
+  .imgHeader {
+    width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 2em;
+  }
+  .imgHeader {
+    width: 100px;
+  }
+}
+@media (max-width: 300px) {
+  .title {
+    font-size: 1.5em;
+  }
 }
 </style>
