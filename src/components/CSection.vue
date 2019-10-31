@@ -1,26 +1,24 @@
 <template>
-  <div>
-    <div class="container p-5">
+  <div class="p-5">
+    <div class="container p-3">
       <div class="row">
-        <div class="col-md-12">
-          <div class="card col-md-12">
-            <div class="card-body">
-              <h3 class="card-title">Introduce los ingredientes</h3>
-              <form @submit.prevent="loadData">
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Cantidad ingrediente (2 tomatos)</label>
-                  <textarea v-model="ingredient" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
-              </form>
-            </div>
+        <div class="card col-12 co-sm-10 col-md-9 mx-auto">
+          <div class="card-body">
+            <h3 class="card-title">Introduce los ingredientes</h3>
+            <form @submit.prevent="loadData">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Cantidad ingrediente (2 tomatos)</label>
+                <textarea v-model="ingredient" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
     <!-- results -->
     <!-- <div v-for="(match, Jindex) in journey.matchs" :key="Jindex"> -->
-    <div v-if="bol == true" class="container  p-5">
+    <div v-if="bol == true" class="container  p-3">
       <h3 class="text-center border border-dark bg-dark text-light mt-2 mb-0 p-2">Resultados</h3>
       <div class="row mx-0">
         <div class="col-12 col-sm-6 col-md-6 border border-dark text-center m-0 p-2">
