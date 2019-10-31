@@ -17,15 +17,13 @@ export default {
   margin: 0;
 }
 .headers {
-  height: 200px;
-  border: 1px solid black;
+  height: 150px;
   background-image: url("../assets/img/fondoVerde.jpg");
   background-attachment: fixed;
   background-position: center;
 }
 .title {
-  font-size: 50px;
-  border: 1px solid black;
+  font-size: 40px;
   background-color: white;
 }
 </style>
