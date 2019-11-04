@@ -18,7 +18,7 @@
     </div>
     <!-- results -->
     <!-- <div v-for="(match, Jindex) in journey.matchs" :key="Jindex"> -->
-    <div v-if="bol == true" class="container  p-3">
+    <div v-if="bol == true" class="container px-2">
       <h3 class="text-center border border-dark bg-dark text-light mt-2 mb-0 p-2">Resultados</h3>
       <div class="row mx-0">
         <div class="col-12 col-sm-6 col-md-6 border border-dark text-center m-0 p-2">
