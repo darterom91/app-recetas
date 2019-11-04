@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="headers">
-      <h1 class="title pt-2 pl-2">App-recetas</h1>
-      <img class="imgHeader float-right " src="@/assets/img/cesta.png" alt="">
+      <h1 class="title p-2"> <img class="imgHeader  " src="@/assets/img/cesta.png" alt="">App-recetas</h1>
+      
     </div>
   </div>
 </template>
@@ -22,6 +22,7 @@ export default {
   background-image: url("../assets/img/fondoVerde.jpg");
   background-attachment: fixed;
   background-position: center;
+  text-align: center;
 }
 .title {
   font-size: 40px;

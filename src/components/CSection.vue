@@ -1,13 +1,13 @@
 <template>
   <div class="p-5">
-    <div class="container p-3">
-      <div class="row justify-content-center">
-        <div class="card border border-dark rounded col-12 co-sm-10 col-md-9">
+    <div class="container-fluid p-3">
+      <div class="row justify-content-center  text-center">
+        <div class="card border border-dark  rounded col-12 col-md-12">
           <div class="card-body">
-            <h3 class="card-title">Introduce los ingredientes</h3>
+            <h3 class="card-title ">Introduce los ingredientes</h3>
             <form @submit.prevent="loadData">
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Cantidad ingrediente (2 tomatos)</label>
+                <label for="exampleFormControlTextarea1" class="">Cantidad ingrediente (2 tomatos)</label>
                 <textarea v-model="ingredient" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-block">Submit</button>
@@ -21,22 +21,22 @@
     <div v-if="bol == true" class="container px-2">
       <h3 class="text-center border border-dark bg-dark text-light mt-2 mb-0 p-2">Resultados</h3>
       <div class="row mx-0">
-        <div class="col-12 col-sm-6 col-md-6 border border-dark text-center m-0 p-2">
+        <div class="col-12 col-sm-6 col-md-6 border border-dark text-center text-light m-0 p-2">
           Ingredientes: {{this.aux}} 
         </div>
-        <div class="col-12 col-sm-6 col-md-6 border border-dark text-center m-0 p-2">
+        <div class="col-12 col-sm-6 col-md-6 border border-dark text-center text-light m-0 p-2">
           Calorias: {{this.nutrition.calories}}
         </div>
       </div>
 
       <h3 class="text-center border border-dark bg-dark text-light mt-2 mb-0 p-2">Health Labels</h3>
-      <div class="row mx-0 mb-2">
+      <div class="row mx-0 mb-2 text-center text-light">
         <div class="col-md-12 border border-dark p-2" v-for="(item, index) in this.nutrition.healthLabels" :key="index">{{item}}</div>
       </div>
 
       <h3 class="text-center border border-dark bg-dark text-light m-0 p-2">Total Nutrients</h3>
       <div class="row mx-0 mb-2">
-        <div class="col-sm-12 col-md-12 text-center" v-for="(item, index) in this.nutrition.totalNutrients" :key="index">
+        <div class="col-sm-12 col-md-12 text-center text-light" v-for="(item, index) in this.nutrition.totalNutrients" :key="index">
           <div class="row">
             <div class="col-12 col-sm-6 border border-dark col-md-6 p-2">{{item.label}}</div>
             <div class="col-12 col-sm-6 border border-dark col-md-6 p-2">{{item.quantity}} {{item.unit}}</div>
