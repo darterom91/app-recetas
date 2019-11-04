@@ -2,7 +2,7 @@
   <div class="p-5">
     <div class="container-fluid p-3">
       <div class="row justify-content-center  text-center">
-        <div class="card border border-dark  rounded col-12 col-md-12">
+        <div class="card border border-dark  rounded col-12 col-md-10">
           <div class="card-body">
             <h3 class="card-title ">Introduce los ingredientes</h3>
             <form @submit.prevent="loadData">

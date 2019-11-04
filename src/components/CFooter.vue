@@ -17,7 +17,7 @@
           <h6 class="col-12 col-sm-12 col-md-4 m-0">© page created for dam91</h6>
         </div>
         <div class="edtext row justify-content-center text-dark p-2">
-          <p>Esta app obtiene los datos de la api nutrition-api de la pagina de nutricion de <a href="https://www.edamam.com/"> Edamam</a></p>
+          <p>Esta app obtiene los datos de la api nutrition-api de la pagina de nutricion <a href="https://www.edamam.com/"> Edamam</a></p>
         </div>
       </div>
     </div>
