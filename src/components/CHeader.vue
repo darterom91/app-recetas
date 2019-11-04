@@ -2,7 +2,7 @@
   <div>
     <div class="headers">
       <h1 class="title pt-2 pl-2">App-recetas</h1>
-      <img class="imgHeader float-right my-1 mr-4" src="@/assets/img/cesta.png" alt="">
+      <img class="imgHeader float-right " src="@/assets/img/cesta.png" alt="">
     </div>
   </div>
 </template>
@@ -36,6 +36,7 @@ export default {
   }
   .imgHeader {
     width: 100px;
+    margin-right: 5%;
   }
 }
 @media (max-width: 600px) {
@@ -44,6 +45,7 @@ export default {
   }
   .imgHeader {
     width: 100px;
+    margin-right: 4%;
   }
 }
 @media (max-width: 400px) {
@@ -51,7 +53,9 @@ export default {
     font-size: 2em;
   }
   .imgHeader {
-    width: 100px;
+    width: 80px;
+    margin-top: 3%;
+    margin-right: 2%;
   }
 }
 @media (max-width: 300px) {

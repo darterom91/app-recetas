@@ -1,8 +1,8 @@
 <template>
-  <div class="p-2">
-    <div class="container px-3 py-5">
-      <div class="row">
-        <div class="card col-12 co-sm-10 col-md-9 mx-auto">
+  <div class="p-5">
+    <div class="container p-3">
+      <div class="row justify-content-center">
+        <div class="card border border-dark rounded col-12 co-sm-10 col-md-9">
           <div class="card-body">
             <h3 class="card-title">Introduce los ingredientes</h3>
             <form @submit.prevent="loadData">
@@ -44,6 +44,11 @@
         </div>
       </div>
     </div>
+    <div v-if="bol2 == true" class="container d-flex justify-content-center p-3">
+      <div class="spinner-border text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -68,11 +73,13 @@ export default {
       aux:'',
       nutrition: [],
       bol: false,
+      bol2: false,
       cont: 0
     }
   },
   methods: {
     loadData(){
+      this.bol2=true;
       this.aux = this.ingredient;
       console.log("cont: "+this.cont);
       const params = {
@@ -99,6 +106,7 @@ export default {
     bolTest(cont){
       if (this.cont === 1) {
         this.bol=true;
+        this.bol2=false;
         console.log(this.bol);
       }
     }
