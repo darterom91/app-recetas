@@ -58,6 +58,7 @@ export default {
 .edtext {
   color: black;
   font-weight: bold;
+  text-align: center;
 }
 
 .edtext  a{

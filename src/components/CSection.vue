@@ -1,8 +1,8 @@
 <template>
-  <div class="p-5">
-    <div class="container-fluid p-3">
+  <div class="sectionC  p-4">
+    <div class="container-fluid p-0">
       <div class="row justify-content-center  text-center">
-        <div class="card border border-dark  rounded col-12 col-md-10">
+        <div class="card border border-dark  rounded col-12 col-md-8">
           <div class="card-body">
             <h3 class="card-title ">Introduce los ingredientes</h3>
             <form @submit.prevent="loadData">
@@ -19,27 +19,27 @@
     <!-- results -->
     <!-- <div v-for="(match, Jindex) in journey.matchs" :key="Jindex"> -->
     <div v-if="bol == true" class="container px-2">
-      <h3 class="text-center border border-dark bg-dark text-light mt-2 mb-0 p-2">Resultados</h3>
-      <div class="row mx-0">
-        <div class="col-12 col-sm-6 col-md-6 border border-dark text-center text-light m-0 p-2">
+      <h3 class="text-center rounded-top bg-light text-dark mt-2 mb-0 p-2">Resultados</h3>
+      <div class="row mx-0 bg-dark">
+        <div class="col-12 col-sm-6 col-md-6 border border-light text-center text-light m-0 p-2">
           Ingredientes: {{this.aux}} 
         </div>
-        <div class="col-12 col-sm-6 col-md-6 border border-dark text-center text-light m-0 p-2">
+        <div class="col-12 col-sm-6 col-md-6 border border-light text-center text-light m-0 p-2">
           Calorias: {{this.nutrition.calories}}
         </div>
       </div>
 
-      <h3 class="text-center border border-dark bg-dark text-light mt-2 mb-0 p-2">Health Labels</h3>
-      <div class="row mx-0 mb-2 text-center text-light">
-        <div class="col-md-12 border border-dark p-2" v-for="(item, index) in this.nutrition.healthLabels" :key="index">{{item}}</div>
+      <h3 class="text-center rounded-top bg-light text-dark text-light mt-2 mb-0 p-2">Health Labels</h3>
+      <div class="row mx-0 mb-2 bg-dark text-center text-light">
+        <div class="col-md-12 border border-light font-weight-bold p-2" v-for="(item, index) in this.nutrition.healthLabels" :key="index">{{item}}</div>
       </div>
 
-      <h3 class="text-center border border-dark bg-dark text-light m-0 p-2">Total Nutrients</h3>
-      <div class="row mx-0 mb-2">
+      <h3 class="text-center rounded-top bg-light text-dark m-0 p-2">Total Nutrients</h3>
+      <div class="row bg-dark mx-0 mb-2">
         <div class="col-sm-12 col-md-12 text-center text-light" v-for="(item, index) in this.nutrition.totalNutrients" :key="index">
           <div class="row">
-            <div class="col-12 col-sm-6 border border-dark col-md-6 p-2">{{item.label}}</div>
-            <div class="col-12 col-sm-6 border border-dark col-md-6 p-2">{{item.quantity}} {{item.unit}}</div>
+            <div class="col-12 col-sm-6 col-md-6 border border-light font-weight-bold p-2">{{item.label}}</div>
+            <div class="col-12 col-sm-6 col-md-6 border border-light p-2">{{item.quantity}} {{item.unit}}</div>
           </div>
         </div>
       </div>
@@ -79,6 +79,7 @@ export default {
   },
   methods: {
     loadData(){
+    
       this.bol2=true;
       this.aux = this.ingredient;
       console.log("cont: "+this.cont);
@@ -115,6 +116,13 @@ export default {
 </script>
 
 <style scored>
+.sectionC {
+  background-image: url("https://images4.alphacoders.com/646/646937.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
 h3 {
   font-size: 1.5em;
   font-weight: bold;
